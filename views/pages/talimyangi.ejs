@@ -1,0 +1,38 @@
+<%- include('../includes/header.ejs') %>
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/maqolalar.css">
+    <script defer src="/js/yangiliklar.js"></script>
+    <%- include('../includes/links.ejs') %>
+        <%- include('../includes/navbar.ejs') %>
+            <section class="maqolalar">
+
+                <div class="next">
+
+                </div>
+                <div class="back">
+
+                </div>
+                <div class="maqolalar-container">
+                    <% news.forEach(e=>{ e.content = e.content.slice(0,40) %>
+                        <div data-id="<%= e._id %> " class="maqola-card">
+                            <div class="maqola-img">
+                                <img src="<%= e.image %>" alt="">
+                            </div>
+                            <div class="title">
+                                <%= e.title %>
+                            </div>
+                            <div class="maqola-desc">
+                                <%= e.content %>
+                            </div>
+                        </div>
+                        <% }) %>
+
+                </div>
+            </section>
+            <script> let page = "<%= page %>"
+                const length = "<%= length %>"
+            </script>
+            <%- include('../includes/footer.ejs') %>
+                </body>
+
+                </html>

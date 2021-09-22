@@ -1,0 +1,32 @@
+.dars .container>div{
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.dars .container>div>div{
+    flex-grow: 1;
+    border-radius: 10px;
+    flex-basis: 400px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px rgba(63, 1, 1, 0.473);
+}
+.video{
+    text-align: center;
+    color: rgb(37, 1, 1);
+    font-size: 28px;
+}
+.malumot{
+    font-size: 20px;
+    font-weight: 100;
+}
+.video video{
+    width: 100%;
+}
+.dars{
+    color: white;
+    background-image: url('../images/hd-background-wallpapers-free-amazing-cool-tablet-high-definition.jpg');
+    padding: 40px 0;
+    background-blend-mode: color-burn;
+    background-color: rgb(54, 1, 1);
+}

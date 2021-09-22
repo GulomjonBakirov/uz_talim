@@ -1,0 +1,47 @@
+<%- include('../includes/header.ejs') %>
+    <script defer src="/js/script.js" type="module">
+    </script>
+    <link rel="stylesheet" href="/css/darsliklar.css">
+    <%- include('../includes/links.ejs') %>
+        <%- include('../includes/navbar.ejs') %>
+            <section class="darslik">
+                <div class="container">
+                    <div class="darslik--box">
+                        <div class="darslik--category">
+                            <% (new Set(lessons.map(e=>e.type))).forEach(e=>{ %>
+                                <p data-id="<%= e %> " class="sinflar">
+                                    <%= e %> - sinf
+                                </p>
+                                <% }) %>
+                        </div>
+                        <div class="darslik--elements">
+                            <div class="row">
+                                <% lessonsType.forEach(e=>{ e.content = e.content.slice(0,40) %>
+                                    <div data-id="<%= e._id %>" class="col col-xl-6 col-lg-12 col-sm-12">
+                                        <div href="#" class="card transition">
+                                            <div class="card--image">
+                                                <img src="<%= e.image %>" alt="">
+                                            </div>
+                                            <div class="card--title">
+                                                <a href="#">
+                                                    <%= e.title %>
+                                                </a>
+                                            </div>
+                                            <div class="card--description">
+                                                <%= e.content %>...
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <% }) %>  
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <%- include('../includes/footer.ejs') %>
+                </body>
+
+                </html>

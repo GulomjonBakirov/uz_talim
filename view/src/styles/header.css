@@ -1,0 +1,218 @@
+.header--navbar,
+.header--sidebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.header--links {
+  display: flex;
+  text-align: center;
+  height: 100%;
+  align-items: center;
+}
+
+.header--links > div {
+  padding: 0 10px;
+  text-align: center;
+}
+
+.header--links .yangilik {
+  position: relative;
+  z-index: 100000000;
+}
+
+.header--links .yangilik > div:nth-of-type(2) {
+  position: absolute;
+  display: none;
+}
+
+.header--user .ex-attribute {
+  position: absolute;
+  display: none;
+  z-index: 3000000;
+}
+
+.header--user .user-icon {
+  font-size: 30px;
+}
+
+.header--user {
+  z-index: 300000;
+  padding: 0 60px 0;
+}
+
+nav {
+  box-shadow: 0 0 20px 5px rgb(97, 5, 5);
+  color: white;
+  background-position: center;
+  background-image: url("../images/hd-background-wallpapers-free-amazing-cool-tablet-high-definition.jpg");
+  background-blend-mode: multiply;
+  background-color: red;
+}
+
+.header--logo {
+  padding: 0 60px 0;
+  position: relative;
+  font-size: 22px;
+  filter: blur(0.5px) drop-shadow(20px) contrast(10);
+  text-shadow: 0 0 2px rgb(139, 54, 54);
+}
+
+.header--logo::after {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  content: "";
+  border-radius: 20px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  transition: 0.8s;
+  transform-origin: 60px 40px;
+  background-color: rgba(110, 18, 6, 0.5);
+}
+
+.header--logo:hover::after {
+  animation: len 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+}
+
+@keyframes len {
+  0% {
+    transform-origin: 60px 40px;
+    transform: rotateZ(0deg);
+  }
+
+  50% {
+    transform-origin: 80px 40px;
+    transform: rotateZ(180deg);
+  }
+
+  100% {
+    transform-origin: 20px 40px;
+    transform: rotateZ(360deg);
+  }
+}
+
+.header--links .yangilik:hover > div:nth-of-type(2) {
+  opacity: 1;
+  height: auto;
+}
+
+.header--links .yangilik > div:nth-of-type(2) {
+  display: block;
+  opacity: 0;
+  width: 100%;
+  transition: all 0.9s;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.header--links .yangilik > div:nth-of-type(2) > div,
+.header--user .ex-attribute > div {
+  margin: 6px 0;
+  padding: 3px 0;
+  color: brown;
+  border-radius: 10px;
+  background-color: rgba(73, 10, 10, 0.144);
+}
+
+.header--user {
+  position: relative;
+}
+
+.header--user .ex-attribute {
+  display: block;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  transition: opacity 0.8s;
+}
+
+.header--user:hover .ex-attribute {
+  opacity: 1;
+  height: auto;
+}
+
+@media (max-width: 1000px) {
+  .header--links {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 940px) {
+  body {
+    position: relative;
+  }
+
+  .header--links {
+    position: fixed;
+    z-index: 1000000;
+    top: calc(100vh - 50px);
+    right: 10px;
+    flex-direction: column;
+    color: rgb(228, 228, 228);
+    background-image: url("../images/hd-background-wallpapers-free-amazing-cool-tablet-high-definition.jpg");
+    background-blend-mode: multiply;
+    background-color: rgb(109, 14, 14);
+    height: 40px;
+    border-radius: 20px;
+    transition: top 0.8s linear, height -0.8s linear;
+  }
+
+  /* .header--links::after {
+      position: absolute;
+      width: 100%;
+      height: 40px;
+      top: 0;
+      left: 0;
+      content: "";
+      background-color: black;
+    } */
+
+  .header--links::before {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transition: transform 1s linear;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%) rotateZ(45deg);
+    content: "";
+    border: none;
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+  }
+
+  .header--links > div {
+    opacity: 0;
+    padding: 10px;
+  }
+
+  .header--links:hover::before {
+    transform: translateX(-50%) translateY(-10px) rotateZ(-135deg);
+  }
+
+  .header--links:hover {
+    height: 250px;
+    top: calc(100vh - 260px);
+  }
+
+  .header--links:hover > div {
+    opacity: 1;
+  }
+
+  .header--links .yangilik > div:last-of-type {
+    transition: 0.8s ease;
+  }
+
+  .header--links .yangilik:hover > div:last-of-type {
+    position: relative;
+  }
+}

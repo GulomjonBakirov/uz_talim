@@ -1,0 +1,46 @@
+<%- include('../includes/header.ejs') %>
+
+    <!-- <script defer src="/js/script.js" type="module">
+    </script> -->
+    <script defer src="/js/audio.js" type="module">
+    </script>
+    <link rel="stylesheet" href="/css/audio.css">
+    <%- include('../includes/links.ejs') %>
+        <%- include('../includes/navbar.ejs') %>
+            <section class="audiolar">
+                <div class="container">
+                    <div class="audio--box">
+                        <div class="row">
+                            <% audios.forEach((e)=>{ %>
+                                <div class="col col-xl-4 col-md-6 col-sm-12">
+                                    <div class="audio--card">
+                                        <div>
+                                            <div class="audio--disk">
+                                                <div>
+
+                                                </div>
+                                            </div>
+                                            <div class="audio--controls">
+                                                <div class="play-pause">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                            </div>
+                                            <audio loop src="<%= e.audio %> "></audio>
+                                        </div>
+                                        <div>
+                                            <marquee dir="ltr" class="title">
+                                               <%= e.title %> 
+                                            </marquee>
+                                        </div>
+                                    </div>
+                                </div>
+                                <% }) %>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <%- include('../includes/footer.ejs') %>
+                </body>
+
+                </html>

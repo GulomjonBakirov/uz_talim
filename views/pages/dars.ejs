@@ -1,0 +1,26 @@
+<%- include('../includes/header.ejs') %>
+    <link rel="stylesheet" href="/css/dars.css">
+    <%- include('../includes/links.ejs') %>
+        <%- include('../includes/navbar.ejs') %>
+            <div class="message">
+            </div>
+            <div class="dars">
+                <div class="container">
+                    <div>
+                        <div class="malumot">
+                            <%= lesson.content %>
+                        </div>
+                        <div class="video"> 
+                            <video controls src="<%= lesson.video %> "></video>
+                            <div>
+                                <%= lesson.title %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%- include('../includes/footer.ejs') %>
+
+                </body>
+
+                </html>

@@ -1,0 +1,9 @@
+.error {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    background-color: rgba(139, 9, 9, 0.897);
+}

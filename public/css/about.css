@@ -1,0 +1,81 @@
+.about--description{
+    padding:20px 0;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(49, 9, 9); 
+}
+.about{
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.575);
+}
+.about--forma{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.about--forma>div{
+flex-basis: 300px;
+flex-grow: 1;
+}
+.about--desc{
+    padding: 20px;
+}
+textarea{
+    color: rgb(66, 62, 62);
+    resize: none;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 2px 4px rgb(75, 5, 28);
+}
+.about--input >div{
+padding: 0 20px;
+}
+.about--input input{
+    border: none;
+    box-shadow: 0 0 2px 4px rgb(75, 5, 28);
+    margin: 20px 0;
+    color: rgb(66, 62, 62);
+    outline: none;
+    width: 100%;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.about--button{
+    text-align: center;
+    padding: 20px;
+}
+.about--button button{
+    width: 200px;
+    z-index: 100;
+    height: 60px;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;
+    border: navajowhite;
+    font-size: 25px;
+    background-color: rgb(167, 17, 17);
+    color: rgb(255, 255, 255);
+}
+.message{
+    transition: 0.5s linear;
+    opacity: 0;
+    z-index: 10;
+  position: fixed;
+  bottom: 0px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  left: 50%;
+  color: rgb(204, 202, 198);
+  font-size: 18px;
+  background-color: rgba(255, 0, 0, 0.808);
+  padding: 20px;
+  border-radius: 20px;
+  transform: translateX(-50%);  
+}

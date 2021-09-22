@@ -1,0 +1,128 @@
+
+.darslik--box {
+  display: flex;
+  padding: 20px 0;
+  flex-wrap: wrap;
+
+}
+
+.darslik--category {
+  flex-grow: 1;
+  flex-basis: 300px;
+  padding: 20px 0;
+}
+
+.darslik--category>p {
+  transform: translateX(0);
+
+}
+
+.darslik--category>p:nth-of-type(1) {
+  animation: left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1;
+  animation-delay: 0.2s;
+  animation-fill-mode: backwards;
+}
+
+.darslik--category>p:nth-of-type(2) {
+  animation: left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1;
+  animation-delay: 0.4s;
+  animation-fill-mode: backwards;
+}
+
+.darslik--category>p:nth-of-type(3) {
+  animation: left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1;
+  animation-delay: 0.6s;
+  animation-fill-mode: backwards;
+}
+
+.darslik--category>p:nth-of-type(4) {
+  animation: left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+}
+
+.darslik--category>p:nth-of-type(5) {
+  animation: left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes left {
+  0% {
+    transform: translateX(-400px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.darslik--elements {
+  padding: 20px 0px ;
+  flex-grow: 2;
+  flex-basis: 300px;
+
+}
+
+.darslik--category>p {
+  padding: 20px;
+  margin: 10px 0;
+  background-color: rgba(121, 3, 3, 0.904);
+  border-radius: 10px;
+  color: azure;
+  background-position: 100px 100px;
+  font-size: 24px;
+  background-image: url('/images/hd-background-wallpapers-free-amazing-cool-tablet-high-definition.jpg');
+  background-position: -90px -110px;
+  background-blend-mode: multiply;
+}
+
+.card {
+  margin: 10px;
+  z-index: 10;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 0 20px 2px rgb(83, 78, 78);
+
+}
+@keyframes blur {
+  0%{
+    filter: blur(10px);
+  }
+  100%{
+    filter: blur(0);
+  }
+  
+}
+.card--title a{
+text-decoration: none;
+font-size: 21px;
+font-weight: 800;
+text-align: center;
+color: rgb(34, 33, 33);
+}
+.card--description{
+  text-align: center;
+  padding: 20px 8px;
+}
+.card--title{
+  text-align: center;
+  margin: 20px auto;
+}
+.col {
+  margin-top: 20px;
+  padding: 0 4px;
+}
+.card img {
+  animation: blur 1s linear;
+  width: 100%;
+}
+
+.card--image {
+  max-height: 200px;
+  overflow: hidden;
+}
+
+
