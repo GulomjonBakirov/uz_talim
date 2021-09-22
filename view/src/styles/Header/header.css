@@ -1,0 +1,76 @@
+.header {
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  -webkit-box-shadow: 0px 2px 7px rgba(137, 137, 137, 0.15);
+          box-shadow: 0px 2px 7px rgba(137, 137, 137, 0.15);
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header .container .headerLogo {
+  font-size: 32px;
+  color: #febd69;
+}
+
+.header .container .navList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+.header .container .navList .navItem {
+  margin-right: 15px;
+}
+
+.header .container .navList .navItem .navLink {
+  color: #111;
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear !important;
+  transition: all 0.2s linear !important;
+}
+
+.header .container .navList .navItem .navLink:hover {
+  color: #febd69;
+}
+
+.header .container .navbarBtn {
+  background-color: inherit;
+  border: 2px solid #21243d;
+  color: #21243d;
+  border-radius: 28px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 19px;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear !important;
+  transition: all 0.2s linear !important;
+}
+
+.header .container .navbarBtn:hover {
+  border: 2px solid #febd69;
+  color: #febd69;
+}
+
+.active {
+  color: #febd69 !important;
+}
+/*# sourceMappingURL=header.css.map */

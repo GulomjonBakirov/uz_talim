@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/boshqaruv.css";
+// import "../styles/boshqaruv.css";
 
 export default function Boshqaruv() {
   return (

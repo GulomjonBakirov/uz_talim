@@ -1,46 +1,57 @@
-import React from "react";
-import "../styles/header.css";
+import React, { useState, useRef } from "react";
+import { NavLink, Link } from "react-router-dom";
+import "../styles/Header/header.css";
 
 export default function Header() {
+  const [active, setActive] = useState(true);
+
+  const menuRef = useRef();
+  const headerRef = useRef();
+
   return (
     <>
-      <canvas id="canvas"> </canvas>
-      <div class="loading">
-        <div class="loading--page"></div>
-      </div>
-      <header>
-        <nav>
-          <div class="container">
-            <div class="header--navbar">
-              <div class="header--logo">UZ TA'LIM</div>
-              <div class="header--sidebar">
-                <div class="header--links">
-                  <div class="darslik">Darsliklar</div>
-                  <div class="maqola">Maqolalar</div>
-                  <div class="audio">Audio Kitoblar</div>
-                  <div class="yangilik">
-                    <div>Yangiliklar</div>
-                    <div>
-                      <div class="yangilik-fan">Fan</div>
-                      <div class="yangilik-talim">Ta'lim</div>
-                    </div>
-                  </div>
-                  <div class="haqimizda">Biz haqimizda</div>
-                </div>
-                <div class="header--user">
-                  <div class="user-icon">
-                    <i class="fas fa-user"></i>
-                  </div>
-                  <div class="ex-attribute">
-                    <div class="profilim">Profilim</div>
-
-                    <div class="exit">Chiqish</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </nav>
+      <header className="header">
+        <div className="container">
+          <h2 className="headerLogo">Uz Ta'lim</h2>
+          <ul className="navList">
+            <li className="navItem">
+              <NavLink
+                to="/"
+                exact
+                activeClassName="active"
+                className="navLink "
+              >
+                Darsliklar
+              </NavLink>
+            </li>
+            <li className="navItem">
+              <NavLink
+                to="/maqola"
+                activeClassName="active"
+                className="navLink"
+              >
+                Maqola
+              </NavLink>
+            </li>
+            <li className="navItem">
+              <NavLink to="/audio" activeClassName="active" className="navLink">
+                Audio Kitoblar
+              </NavLink>
+            </li>
+            <li className="navItem">
+              <NavLink
+                to="/yangiliklar"
+                activeClassName="active"
+                className="navLink"
+              >
+                Yangiliklar
+              </NavLink>
+            </li>
+          </ul>
+          <Link to="/login" className="navbarBtn">
+            Kirish
+          </Link>
+        </div>
       </header>
     </>
   );
