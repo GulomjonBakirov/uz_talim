@@ -9,7 +9,7 @@ import Boshqaruv from "./pages/Boshqaruv";
 
 function App() {
   return (
-    <Router className="c">
+    <Router>
       <Header />
       {/* <Route exact={true} path="/">
         <Login />
