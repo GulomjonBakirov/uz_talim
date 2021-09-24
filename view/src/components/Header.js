@@ -37,6 +37,16 @@ export default function Header() {
                 activeClassName="active"
                 className="navLink "
               >
+                Bosh Sahifa
+              </NavLink>
+            </li>
+            <li className="navItem">
+              <NavLink
+                to="/darsliklar"
+                exact
+                activeClassName="active"
+                className="navLink "
+              >
                 Darsliklar
               </NavLink>
             </li>
