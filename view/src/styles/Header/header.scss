@@ -1,3 +1,5 @@
+$mainColor: #febd69;
+
 .header {
   padding: 10px;
   border-bottom: 1px solid #fff;
@@ -10,7 +12,7 @@
     margin: 0 auto;
     .headerLogo {
       font-size: 32px;
-      color: #febd69;
+      color: $mainColor;
     }
     .navList {
       display: flex;
@@ -24,7 +26,7 @@
           text-decoration: none;
           transition: all 0.2s linear !important;
           &:hover {
-            color: #febd69;
+            color: $mainColor;
           }
         }
       }
@@ -43,12 +45,12 @@
       text-decoration: none;
       transition: all 0.2s linear !important;
       &:hover {
-        border: 2px solid #febd69;
-        color: #febd69;
+        border: 2px solid $mainColor;
+        color: $mainColor;
       }
     }
   }
 }
 .active {
-  color: #febd69 !important;
+  color: $mainColor !important;
 }

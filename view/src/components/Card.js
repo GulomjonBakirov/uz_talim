@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 export default function CardComponent({ theme, description }) {
   return (
     <motion.div
-      animate={{ opacity: 1, transition: { delay: 1, duration: 3 } }}
+      animate={{ opacity: 1, transition: { delay: 0.2, duration: 3 } }}
       initial={{ opacity: 0 }}
     >
       <Card sx={{ marginRight: "15px" }}>

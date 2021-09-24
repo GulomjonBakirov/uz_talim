@@ -1,36 +1,17 @@
 import React from "react";
-// import "../styles/footer.css";
+import "../styles/Footer/footer.css";
 
 export default function Footer() {
   return (
     <>
-      <svg>
-        <defs>
-          <filter id="gooo">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="ogo" />
-            <feColorMatrix
-              in="ogo"
-              type="matrix"
-              mode="matrix"
-              values="
-             1 0 0 0 0
-             0 1 0 0 0
-             0 0 1 0 0 
-             0 0 0 700 -20 "
-              result="ogo2"
-            />
-            <feComposite in="SourceGraphic" in2="ogo2" operator="atop" />
-          </filter>
-        </defs>
-      </svg>
-      <footer>
+      <footer className="Footer">
         <div class="container">
-          <div class="row">
-            <div class="col col-xl-4 col-md-6 col-sm-12">
-              <div>UZ TA'LIM</div>
-              <div>Biz bilan yanada qiziqroq</div>
+          <div className="row">
+            <div className="inside">
+              <h1 className="logo">UZ TA'LIM</h1>
+              <p>Biz bilan yanada qiziqroq</p>
             </div>
-            <div class="col col-xl-4 col-md-6 col-sm-12">
+            <div className="contact">
               <div>Biz bilan aloqa</div>
               <div class="aloqa">
                 <a href="mailto:example@gmail.com">
@@ -47,7 +28,7 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-            <div class="col col-xl-4 col-md-6 col-sm-12">
+            <div class="socialMedia">
               <div>Ijtimoiy tarmoqlar</div>
               <div class="links">
                 <a href="https:/t.me/ermatovs_portfolio">
@@ -70,7 +51,6 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-      {/* <script src="/js/loading.js"></script> */}
     </>
   );
 }

@@ -6,8 +6,6 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
-import darslik10 from "../components/Feed/darslik10";
-import darslik9 from "../components/Feed/darslik9";
 import Feed from "../components/Feed/Feed";
 import SidebarHome from "../components/SidebarHome";
 import "../styles/Home/Home.css";

@@ -32,6 +32,7 @@ function App() {
         <Boshqaruv />
         <Footer />
       </Route> */}
+      <Footer />
     </Router>
   );
 }

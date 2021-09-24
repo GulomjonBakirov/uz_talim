@@ -63,22 +63,70 @@ export default function Feed({ value }) {
         </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        <div className="Cards">
+          {data.map((d) => (
+            <CardComponent
+              key={d.id}
+              theme={d.theme}
+              description={d.description}
+            />
+          ))}
+        </div>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <div className="Cards">
+          {data.map((d) => (
+            <CardComponent
+              key={d.id}
+              theme={d.theme}
+              description={d.description}
+            />
+          ))}
+        </div>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Item Four
+        <div className="Cards">
+          {data.map((d) => (
+            <CardComponent
+              key={d.id}
+              theme={d.theme}
+              description={d.description}
+            />
+          ))}
+        </div>
       </TabPanel>
       <TabPanel value={value} index={4}>
-        Item Five
+        <div className="Cards">
+          {data.map((d) => (
+            <CardComponent
+              key={d.id}
+              theme={d.theme}
+              description={d.description}
+            />
+          ))}
+        </div>
       </TabPanel>
       <TabPanel value={value} index={5}>
-        Item Six
+        <div className="Cards">
+          {data.map((d) => (
+            <CardComponent
+              key={d.id}
+              theme={d.theme}
+              description={d.description}
+            />
+          ))}
+        </div>
       </TabPanel>
       <TabPanel value={value} index={6}>
-        Item Seven
+        <div className="Cards">
+          {data.map((d) => (
+            <CardComponent
+              key={d.id}
+              theme={d.theme}
+              description={d.description}
+            />
+          ))}
+        </div>
       </TabPanel>
     </div>
   );
