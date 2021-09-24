@@ -1,12 +1,17 @@
 .Home {
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 50px;
   .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     .SidebarHome {
-      flex: 3;
+      flex: 2;
+      .css-10d9dml-MuiTabs-indicator {
+        background-color: #febd69;
+      }
+
       .sidebarList {
         list-style-type: none;
         // display: flex;
@@ -39,6 +44,16 @@
     }
     .Feed {
       flex: 5;
+      .Cards {
+        display: flex;
+        .cardsChild {
+          margin-right: 15px;
+        }
+      }
     }
   }
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #febd69 !important;
 }

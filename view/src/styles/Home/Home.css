@@ -1,6 +1,7 @@
 .Home {
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 .Home .container {
@@ -15,9 +16,13 @@
 }
 
 .Home .container .SidebarHome {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.Home .container .SidebarHome .css-10d9dml-MuiTabs-indicator {
+  background-color: #febd69;
 }
 
 .Home .container .SidebarHome .sidebarList {
@@ -54,5 +59,19 @@
   -webkit-box-flex: 5;
       -ms-flex: 5;
           flex: 5;
+}
+
+.Home .container .Feed .Cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Home .container .Feed .Cards .cardsChild {
+  margin-right: 15px;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #febd69 !important;
 }
 /*# sourceMappingURL=Home.css.map */

@@ -7,7 +7,11 @@ export default function SidebarHome(props) {
   console.log(props);
   const a11yProps = props.a11yProps;
   return (
-    <div className="SidebarHome">
+    <motion.div
+      className="SidebarHome"
+      animate={{ x: 0, transition: { delay: 0 } }}
+      initial={{ x: -150 }}
+    >
       {/* <ul className="sidebarList">
         <motion.li
           className="sidebarItem"
@@ -55,14 +59,15 @@ export default function SidebarHome(props) {
         aria-label="Vertical tabs example"
         sx={{ borderRight: 1, borderColor: "divider" }}
       >
-        <Tab label="Item One" {...a11yProps(0)} />
-        <Tab label="Item Two" {...a11yProps(1)} />
-        <Tab label="Item Three" {...a11yProps(2)} />
-        <Tab label="Item Four" {...a11yProps(3)} />
-        <Tab label="Item Five" {...a11yProps(4)} />
-        <Tab label="Item Six" {...a11yProps(5)} />
-        <Tab label="Item Seven" {...a11yProps(6)} />
+        <Tab label="1 - sinf" {...a11yProps(0)} />
+
+        <Tab label="2 - sinf" {...a11yProps(1)} />
+        <Tab label="3 - sinf" {...a11yProps(2)} />
+        <Tab label="4 - sinf" {...a11yProps(3)} />
+        <Tab label="5 - sinf" {...a11yProps(4)} />
+        <Tab label="6 - sinf" {...a11yProps(5)} />
+        <Tab label="7 - sinf" {...a11yProps(6)} />
       </Tabs>
-    </div>
+    </motion.div>
   );
 }
