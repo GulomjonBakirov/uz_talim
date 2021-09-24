@@ -1,0 +1,58 @@
+.Home {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Home .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Home .container .SidebarHome {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.Home .container .SidebarHome .sidebarList {
+  list-style-type: none;
+}
+
+.Home .container .SidebarHome .sidebarList .sidebarItem {
+  display: block;
+  margin: 20px;
+  border: 1px solid #f1f1f1;
+  padding: 15px;
+  border-radius: 5px;
+  position: relative;
+  background-color: chocolate;
+}
+
+.Home .container .SidebarHome .sidebarList .sidebarItem .sidebarLink {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+
+.Home .container .SidebarHome .sidebarList .sidebarItem .sidebarLink:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.Home .container .Feed {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+/*# sourceMappingURL=Home.css.map */

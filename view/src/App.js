@@ -6,11 +6,14 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Login from "./pages/Login";
 import Audio from "./pages/Audio";
 import Boshqaruv from "./pages/Boshqaruv";
+import Home from "./pages/Home";
+import TodoList from "./components/Menu";
 
 function App() {
   return (
     <Router>
       <Header />
+      <Route exact path="/" component={Home} />
       {/* <Route exact={true} path="/">
         <Login />
       </Route>

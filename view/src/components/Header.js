@@ -8,12 +8,16 @@ import "../styles/Header/header.css";
 
 export default function Header() {
   const [anchorEl, setAnchorEl] = useState(null);
-  const open = Boolean(anchorEl);
+  const [anchorElement, setAnchorElement] = useState(null);
+  const openNews = Boolean(anchorEl);
+  const openAccount = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
+    setAnchorElement(event.currentTarget);
   };
   const handleClose = () => {
     setAnchorEl(null);
+    setAnchorElement(null);
   };
 
   return (
@@ -51,45 +55,13 @@ export default function Header() {
               </NavLink>
             </li>
             <li className="navItem">
-              <Link
-                id="yangiliklarButton"
-                aria-controls="yangiliklar"
-                aria-haspopup="true"
-                aria-expanded={open ? "true" : undefined}
-                onClick={handleClick}
+              <NavLink
+                to="/yangiliklar"
+                activeClassName="active"
                 className="navLink"
-                to="/fanYangiliklar"
               >
                 Yangiliklar
-              </Link>
-              <Menu
-                id="yangiliklar"
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                MenuListProps={{
-                  "aria-labelledby": "yangiliklarButton",
-                }}
-              >
-                <MenuItem onClick={handleClose}>
-                  <NavLink
-                    to="/fanYangiliklar"
-                    activeClassName="active"
-                    style={{ textDecoration: "none", color: "#111" }}
-                  >
-                    Fan Yangiliklari
-                  </NavLink>
-                </MenuItem>
-                <MenuItem onClick={handleClose}>
-                  <NavLink
-                    to="/talimYangiliklar"
-                    activeClassName="active"
-                    style={{ textDecoration: "none", color: "#111" }}
-                  >
-                    Ta'lim yangiliklari
-                  </NavLink>
-                </MenuItem>
-              </Menu>
+              </NavLink>
             </li>
           </ul>
           {false ? (
@@ -99,16 +71,17 @@ export default function Header() {
           ) : (
             <>
               <PersonIcon
+                style={{ cursor: "pointer" }}
                 id="accountButton"
                 aria-controls="account"
                 aria-haspopup="true"
-                aria-expanded={open ? "true" : undefined}
+                aria-expanded={openAccount ? "true" : undefined}
                 onClick={handleClick}
               />
               <Menu
                 id="account"
-                anchorEl={anchorEl}
-                open={open}
+                anchorEl={anchorElement}
+                open={Boolean(anchorElement)}
                 onClose={handleClose}
                 MenuListProps={{
                   "aria-labelledby": "accountButton",
