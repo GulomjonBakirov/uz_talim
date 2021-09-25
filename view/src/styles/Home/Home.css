@@ -1,0 +1,27 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.container .HomeAbout .title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 32px;
+  font-weight: 45px;
+}
+
+.container .HomeAbout .inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .HomeAbout .inside .AboutImg {
+  width: 350px;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 25px;
+}
+/*# sourceMappingURL=Home.css.map */

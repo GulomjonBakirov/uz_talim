@@ -1,0 +1,22 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 25px;
+  .HomeAbout {
+    .title {
+      text-align: center;
+      font-weight: 500;
+      font-size: 32px;
+      font-weight: 45px;
+    }
+    .inside {
+      display: flex;
+      .AboutImg {
+        width: 350px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin-right: 25px;
+      }
+    }
+  }
+}

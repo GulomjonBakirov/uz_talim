@@ -9,7 +9,7 @@ const CarouselContainer = () => {
     objectFit: "cover",
   };
   return (
-    <Carousel autoplay autoplaySpeed="20">
+    <Carousel autoplay autoplaySpeed="30">
       <div>
         <img
           className=""
