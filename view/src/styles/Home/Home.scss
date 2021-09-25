@@ -3,6 +3,7 @@
   margin: 0 auto;
   margin-top: 25px;
   .HomeAbout {
+    margin-bottom: 15px;
     .title {
       text-align: center;
       font-weight: 500;
@@ -17,6 +18,20 @@
         object-fit: cover;
         margin-right: 25px;
       }
+      .lessonCard {
+        margin-right: 15px;
+      }
     }
   }
+}
+
+.ant-card-meta-title {
+  white-space: normal;
+}
+
+.ant-modal-footer {
+  display: none;
+}
+.ant-card-meta {
+  margin-bottom: 10px;
 }

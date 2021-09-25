@@ -1,6 +1,5 @@
 .Footer {
-  border-top: 1px solid #111;
-  display: none;
+  border-top: 1px solid #f1f1f1;
 }
 
 .Footer .container {
@@ -32,13 +31,31 @@
 
 .Footer .container .row .inside p {
   font-size: 20px;
-  color: #f1f1f1;
+  color: #192275;
 }
 
 .Footer .container .row .contact {
   -webkit-box-flex: 4;
       -ms-flex: 4;
           flex: 4;
+}
+
+.Footer .container .row .contact .aloqa {
+  display: block;
+}
+
+.Footer .container .row .contact .aloqa a {
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Footer .container .row .contact .aloqa a .icon {
+  margin-right: 5px;
 }
 
 .Footer .container .row .socialMedia {

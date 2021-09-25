@@ -1,8 +1,7 @@
 $mainColor: #febd69;
 
 .Footer {
-  border-top: 1px solid #111;
-  display: none;
+  border-top: 1px solid #f1f1f1;
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -19,11 +18,22 @@ $mainColor: #febd69;
         }
         p {
           font-size: 20px;
-          color: #f1f1f1;
+          color: #192275;
         }
       }
       .contact {
         flex: 4;
+        .aloqa {
+          display: block;
+          a {
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            .icon {
+              margin-right: 5px;
+            }
+          }
+        }
       }
       .socialMedia {
         flex: 2;

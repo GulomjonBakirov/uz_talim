@@ -1,10 +1,12 @@
 import React, { useState, useRef } from "react";
 import { NavLink, Link } from "react-router-dom";
-import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
+import { Modal, Button } from "antd";
+
 import MenuItem from "@mui/material/MenuItem";
 import PersonIcon from "@mui/icons-material/Person";
 import "../styles/Header/header.css";
+import ModalView from "./Modal";
 
 export default function Header() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -18,6 +20,16 @@ export default function Header() {
   const handleClose = () => {
     setAnchorEl(null);
     setAnchorElement(null);
+  };
+
+  const [modalVisible, setModalVisible] = useState(false);
+  const [modal2Visible, setModal2Visible] = useState(false);
+
+  const ModalVisibel = (modalVisible) => {
+    setModalVisible(modalVisible);
+  };
+  const Modal2Visibel = (modal2Visible) => {
+    setModal2Visible(modal2Visible);
   };
 
   return (
@@ -74,10 +86,24 @@ export default function Header() {
               </NavLink>
             </li>
           </ul>
-          {false ? (
-            <Link to="/login" className="navbarBtn">
-              Kirish
-            </Link>
+          {true ? (
+            <div>
+              <Button className="navbarBtn" onClick={() => ModalVisibel(true)}>
+                Kirish
+              </Button>
+
+              <Button className="navbarBtn" onClick={() => Modal2Visibel(true)}>
+                Ro'yxatdan O'tish
+              </Button>
+              <ModalView
+                Modal2Visibel={Modal2Visibel}
+                modal2Visible={modal2Visible}
+              />
+              <ModalView
+                ModalVisibel={ModalVisibel}
+                modalVisible={modalVisible}
+              />
+            </div>
           ) : (
             <>
               <PersonIcon

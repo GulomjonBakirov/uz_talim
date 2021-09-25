@@ -4,6 +4,10 @@
   margin-top: 25px;
 }
 
+.container .HomeAbout {
+  margin-bottom: 15px;
+}
+
 .container .HomeAbout .title {
   text-align: center;
   font-weight: 500;
@@ -23,5 +27,21 @@
   -o-object-fit: cover;
      object-fit: cover;
   margin-right: 25px;
+}
+
+.container .HomeAbout .inside .lessonCard {
+  margin-right: 15px;
+}
+
+.ant-card-meta-title {
+  white-space: normal;
+}
+
+.ant-modal-footer {
+  display: none;
+}
+
+.ant-card-meta {
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=Home.css.map */

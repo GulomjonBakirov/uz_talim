@@ -1,4 +1,11 @@
 import React from "react";
+import TelegramIcon from "@mui/icons-material/Telegram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import EmailIcon from "@mui/icons-material/Email";
+import PhoneIcon from "@mui/icons-material/Phone";
 import "../styles/Footer/footer.css";
 
 export default function Footer() {
@@ -12,18 +19,18 @@ export default function Footer() {
               <p>Biz bilan yanada qiziqroq</p>
             </div>
             <div className="contact">
-              <div>Biz bilan aloqa</div>
+              <h2>Biz bilan aloqa:</h2>
               <div class="aloqa">
                 <a href="mailto:example@gmail.com">
-                  <i class="fas fa-envelope"></i>
+                  <EmailIcon className="icon" />
                   example@gmail.com
                 </a>
                 <a href="tel:+998990886677">
-                  <i class="fas fa-phone"></i>
+                  <PhoneIcon className="icon" />
                   +998990886677
                 </a>
                 <a href="tel:+998990896677">
-                  <i class="fas fa-phone"></i>
+                  <PhoneIcon className="icon" />
                   +998990896677
                 </a>
               </div>
@@ -32,19 +39,19 @@ export default function Footer() {
               <div>Ijtimoiy tarmoqlar</div>
               <div class="links">
                 <a href="https:/t.me/ermatovs_portfolio">
-                  <i class="fab fa-telegram"></i>
+                  <TelegramIcon />
                 </a>
                 <a href="https:/t.me/ermatovs_portfolio">
-                  <i class="fab fa-twitter"></i>
+                  <FacebookIcon />
                 </a>
                 <a href="https:/t.me/ermatovs_portfolio">
-                  <i class="fab fa-instagram"></i>
+                  <InstagramIcon />
                 </a>
                 <a href="https:/t.me/ermatovs_portfolio">
-                  <i class="fab fa-youtube"></i>
+                  <YouTubeIcon />
                 </a>
                 <a href="https:/t.me/ermatovs_portfolio">
-                  <i class="fab fa-facebook"></i>
+                  <TwitterIcon />
                 </a>
               </div>
             </div>
