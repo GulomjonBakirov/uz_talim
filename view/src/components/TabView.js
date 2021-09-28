@@ -1,11 +1,13 @@
 import { Tabs } from "antd";
+import Video from "./Video";
 const { TabPane } = Tabs;
-const data = [{ name: "natural sonlar", video: "video" }];
-const Demo = () => {
+
+const Demo = ({ data }) => {
+  console.log(data);
   return (
     <Tabs defaultActiveKey="1" centered>
       <TabPane tab={`${1}-dars`} key="1">
-        Content of Tab Pane 1
+        <Video data={data} />
       </TabPane>
       <TabPane disabled tab="Tab 2" key="2">
         Content of Tab Pane 2
