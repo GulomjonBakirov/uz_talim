@@ -60,13 +60,10 @@ export default function SidebarHome(props) {
         sx={{ borderRight: 1, borderColor: "divider", height: "80vh" }}
       >
         <Tab label="5 - sinf" {...a11yProps(0)} />
-
         <Tab label="6 - sinf" {...a11yProps(1)} />
         <Tab label="7 - sinf" {...a11yProps(2)} />
         <Tab label="8 - sinf" {...a11yProps(3)} />
         <Tab label="9 - sinf" {...a11yProps(4)} />
-        <Tab label="10 - sinf" {...a11yProps(5)} />
-        <Tab label="11 - sinf" {...a11yProps(6)} />
       </Tabs>
     </motion.div>
   );

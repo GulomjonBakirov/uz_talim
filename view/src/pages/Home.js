@@ -1,9 +1,9 @@
 import React from "react";
 import CarouselContainer from "../components/Carousel";
 import Divider from "../components/Divider";
-import HomeAbout from "../components/HomeAbout";
-import HomeLessons from "../components/HomeLessons";
-import ModalView from "../components/Modal";
+import HomeAbout from "../components/Home/HomeAbout";
+import HomeLessons from "../components/Home/HomeLessons";
+import HomeTeachers from "../components/Home/HomeTeachers";
 import "../styles/Home/Home.css";
 
 export default function Home() {
@@ -15,7 +15,8 @@ export default function Home() {
         <HomeAbout />
         <Divider />
         <HomeLessons />
-        <ModalView />
+        <Divider />
+        <HomeTeachers />
       </div>
     </div>
   );

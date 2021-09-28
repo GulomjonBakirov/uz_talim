@@ -54,16 +54,6 @@ export default function Header() {
             </li>
             <li className="navItem">
               <NavLink
-                to="/darsliklar"
-                exact
-                activeClassName="active"
-                className="navLink "
-              >
-                Darsliklar
-              </NavLink>
-            </li>
-            <li className="navItem">
-              <NavLink
                 to="/maqola"
                 activeClassName="active"
                 className="navLink"

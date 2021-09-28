@@ -9,6 +9,7 @@ import Boshqaruv from "./pages/Boshqaruv";
 import Darslik from "./pages/Darslik";
 import TodoList from "./components/Menu";
 import Home from "./pages/Home";
+import Lessons from "./pages/Lessons";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route exact path="/" component={Home} />
 
       <Route exact path="/darsliklar" component={Darslik} />
+      <Route path="/dars/:id" component={Lessons} />
       {/* <Route exact={true} path="/">
         <Login />
       </Route>

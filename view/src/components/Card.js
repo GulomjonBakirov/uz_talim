@@ -19,7 +19,7 @@ export default function CardComponent({ theme, description }) {
           component="img"
           alt="green iguana"
           height="140"
-          image="/images/bola.jpg"
+          image="/images/1.jpeg"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
@@ -32,7 +32,7 @@ export default function CardComponent({ theme, description }) {
         <CardActions>
           <Button size="small">
             <Link
-              to="/kitob/:id"
+              to="/dars/:id"
               style={{ textDecoration: "none", color: "#1976d2" }}
             >
               Learn More
