@@ -18,9 +18,11 @@ const data = [
 
 export default function Lessons() {
   return (
-    <div className="lessonVideos">
+    <div
+      className="lessonVideos"
+      style={{ maxWidth: "1200px", margin: "0 auto" }}
+    >
       <TabView data={data} />
-      <video src="../videos/natural_sonlar.mp4" />
     </div>
   );
 }
