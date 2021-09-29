@@ -1,15 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
-import CardComponent from "../Card";
+import CardComponent from "./Card";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;

@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Modal } from "antd";
 import { Form, Input, Button, Checkbox } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
-import { InputNumber, Cascader, Select, Row, Col, AutoComplete } from "antd";
+import { Select } from "antd";
+import { Link } from "react-router-dom";
 const { Option } = Select;
 
 const formItemLayout = {
@@ -183,7 +184,7 @@ const RegistrationForm = ({ onCancel }) => {
         {...tailFormItemLayout}
       >
         <Checkbox>
-          I have read the <a href="">agreement</a>
+          I have read the <Link to="">agreement</Link>
         </Checkbox>
       </Form.Item>
       <Form.Item {...tailFormItemLayout}>

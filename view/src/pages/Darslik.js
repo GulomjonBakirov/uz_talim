@@ -1,12 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
-import Feed from "../components/Feed/Feed";
+import Feed from "../components/Feed";
 import SidebarHome from "../components/SidebarHome";
 import "../styles/Darsliklar/Darsliklar.css";
 

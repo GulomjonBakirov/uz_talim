@@ -1,7 +1,7 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import Menu from "@mui/material/Menu";
-import { Modal, Button } from "antd";
+import { Button } from "antd";
 
 import MenuItem from "@mui/material/MenuItem";
 import PersonIcon from "@mui/icons-material/Person";
@@ -11,7 +11,6 @@ import ModalView from "./Modal";
 export default function Header() {
   const [anchorEl, setAnchorEl] = useState(null);
   const [anchorElement, setAnchorElement] = useState(null);
-  const openNews = Boolean(anchorEl);
   const openAccount = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -58,7 +57,7 @@ export default function Header() {
                 activeClassName="active"
                 className="navLink"
               >
-                Maqola
+                Maqolalar
               </NavLink>
             </li>
             <li className="navItem">

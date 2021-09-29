@@ -10,15 +10,25 @@ import Darslik from "./pages/Darslik";
 import TodoList from "./components/Menu";
 import Home from "./pages/Home";
 import Lessons from "./pages/Lessons";
+import Maqolalar from "./pages/Maqolalar";
+import Maqola from "./pages/Maqola";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
     <Router>
       <Header />
-      <Route exact path="/" component={Home} />
+      <Switch>
+        <Route exact path="/" component={Home} />
 
-      <Route exact path="/darsliklar" component={Darslik} />
-      <Route path="/dars/:id" component={Lessons} />
+        <Route exact path="/darsliklar" component={Darslik} />
+        <Route exact path="/maqola" component={Maqolalar} />
+        <Route path="/dars/:id" component={Lessons} />
+        <Route exact path="/maqola/:id" component={Maqola} />
+        <Route path="*">
+          <NotFound />
+        </Route>
+      </Switch>
       {/* <Route exact={true} path="/">
         <Login />
       </Route>

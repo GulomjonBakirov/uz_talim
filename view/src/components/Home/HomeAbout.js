@@ -5,7 +5,7 @@ export default function HomeAbout() {
     <div className="HomeAbout">
       <h2 className="title">Biz Haqimizda</h2>
       <div className="inside">
-        <img src="/images/2.jpg" className="AboutImg" />
+        <img src="/images/2.jpg" alt="about" className="AboutImg" />
         <p className="text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eos
           molestiae modi. A unde illo adipisci, animi accusantium recusandae
